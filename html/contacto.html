@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preentrega+Franco Barrientos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../img/logopng.png" alt="logo" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../html/catalogo.html">Catalogo</a></li>
+                                <li><a class="dropdown-item" href="../html/promociones.html">Promociones</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/quienessomos.html">¿Quienes somos?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../html/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar en el catálogo"
+                            aria-label="Search">
+                        <button class="btn botonbuscar" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <form action="" class="form">
+            <label for="nombre" hidden>Nombre</label>
+            <input type="text" id="nombre" class="form1 itemform" placeholder="Nombre y apellido">
+
+
+
+            <label for="edad" hidden>Edad</label>
+            <input type="text" id="edad" class="form2 itemform" placeholder="Edad">
+
+
+
+            <label for="correo" hidden class="form3">Correo</label>
+            <input type="email" id="correo" class="form3  itemform" placeholder="Correo electrónico">
+
+
+
+            <div class="form4 itemform">
+                <label for="motivo">Motivo</label>
+                <select id="motivo" class="motivo">
+                    <option value="consulta">Consulta</option>
+                    <option value="pedido">Pedido</option>
+                    <option value="otros">Otros</option>
+                </select>
+            </div>
+
+
+            <label for="mensaje"></label>
+            <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Deje su mensaje"
+                class="form5 itemform"></textarea>
+
+            <div class="form6 itemform">
+                <input class="formbotones" type="submit" value="Enviar">
+                <input class="formbotones" type="reset" value="Borrar todo">
+            </div>
+        </form>
+        <div>
+            <a href="https://api.whatsapp.com/send?phone=2974444525&text=Hola%20Meraki!%20Queria%20hacer%20una%20consulta"
+                target="_blank">
+                <img class="whatsapp" src="../img/whatsapp.png" alt="Logo de whatsapp">
+            </a>
+        </div>
+
+
+    </main>
+    <footer class="footer">
+        <div class="divfooter">
+            <img src="../img/ubicacion.png" alt="ubicacion" class="imgfooter">
+            <p class="foottext">Nos encontramos en calle 1122</p>
+        </div>
+        <div class="divfooter">
+            <img src="../img/instagram.png" alt="instagram" class="imgfooter">
+            <p class="foottext">Instagram</p>
+        </div>
+        <div class="divfooter">
+            <img src="../img/whatsapp.png" alt="whatsapp" class="imgfooter">
+            <p class="foottext">Whatsapp</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
