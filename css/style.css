@@ -32,8 +32,9 @@ h1 {
     height: 120px;
 
 }
+
 .pestañadesp {
-background-color: pink;
+    background-color: pink;
 }
 
 .logo {
@@ -43,11 +44,13 @@ background-color: pink;
     grid-area: logo;
     margin-left: 10px;
 }
-.botonbuscar{
+
+.botonbuscar {
     border: 1px #4FA8C2 solid;
     background-color: #4FA8C2;
     color: #fafafa;
 }
+
 /* NUEVOS INGRESOS O HOME */
 .Comocomprar {
     display: flex;
@@ -271,7 +274,7 @@ option {
     justify-content: center;
     margin: 25px;
     border: #4FA8C2 1px outset;
-    border-radius: 50px;
+    border-radius: 10px;
     box-shadow: 5px 1px 10px;
 }
 
@@ -386,10 +389,15 @@ option {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .tarjetaimagen {
+        padding: 0;
+    }
+
     .header {
         height: 130px;
 
     }
+
     .pestañadesp {
         z-index: 1100;
         background-color: pink;
@@ -435,13 +443,23 @@ option {
     }
 
 }
-@media (min-width: 768px) and (max-width: 990px){
-.pestañadesp {
-    z-index: 1100;
-    background-color: white;
-    position: relative;
-    top: 2px;
-}
+
+@media (min-width: 768px) and (max-width: 990px) {
+    .pestañadesp {
+        z-index: 1100;
+        background-color: white;
+        position: relative;
+        top: 2px;
+    }
+
+    .catalogo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tarjetaimagen {
+        padding: 0;
+    }
 }
 
 @media (min-width: 390px) and (max-width: 767px) {
@@ -449,6 +467,7 @@ option {
         height: 160px;
 
     }
+
     .pestañadesp {
         z-index: 1100;
         background-color: white;
@@ -486,6 +505,10 @@ option {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .tarjetaimagen {
+        padding: 0;
+    }
+
 
     .whatsapp {
         width: 10vh;
@@ -514,9 +537,10 @@ option {
         width: 90vh;
         height: 150px;
     }
-.textocomocomprar{
-    text-align: center;
-}
+
+    .textocomocomprar {
+        text-align: center;
+    }
 
 }
 
@@ -558,6 +582,9 @@ option {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .tarjetaimagen {
+        padding: 0;
+    }
 
     .whatsapp {
         width: 5vh;
@@ -611,14 +638,15 @@ option {
         padding-bottom: 0;
 
     }
-    .imgcomocomprar{
+
+    .imgcomocomprar {
         height: 50px;
         width: 50px;
     }
 
     .textocomocomprar {
         font-size: 11px;
-    text-align: center;
-    padding: 0; 
-   }
+        text-align: center;
+        padding: 0;
+    }
 }
