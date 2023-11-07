@@ -236,9 +236,9 @@ option {
 }
 
 .formbotones {
-    background-color: #65c5e1;
-    border-radius: 20px;
-    border: 1px black ridge;
+    background-color: #4FA8C2;
+    border-radius: 10px;
+    color: white;
     font-weight: 600;
     font-size: 20px;
     margin-left: 10px;
@@ -247,7 +247,7 @@ option {
 }
 
 .formbotones:hover {
-    background-color: #4FA8C2;
+    background-color: #65c5e1;
 }
 
 /* LINK WHATSAPP */
