@@ -1,0 +1,23 @@
+.header {
+    background-color: pink;
+    border-bottom: 2px palevioletred ridge;
+    height: 120px;
+}
+
+.pestañadesp {
+    background-color: pink;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    grid-area: logo;
+    margin-left: 10px;
+}
+
+.botonbuscar {
+    border: 1px #4FA8C2 solid;
+    background-color: #4FA8C2;
+    color: #fafafa;
+}
