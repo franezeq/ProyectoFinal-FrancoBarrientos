@@ -1,55 +1,53 @@
 .Comocomprar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px auto;
+  @include flex (flex, row);
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.cajacomocomprar {
+  @include flex (flex, column);
+  align-items: center;
+  padding: 5px 15px;
+}
+
+.cajacomocomprar1,
+.cajacomocomprar2 {
+  border-right: 1px black solid;
+}
+
+.imgcomocomprar {
+  @include tamaño (80px, 80px);
+  justify-content: center;
+  object-fit: contain;
+}
+
+.textocomocomprar {
+  padding-top: 6px;
+  font-size: 15px;
+}
+
+.subhome {
+  text-align: center;
+  border-top: 15px pink solid;
+  padding-top: 5px;
+  border-bottom: 15px pink solid;
+}
+
+.botonmodal {
+  background-color: #4FA8C2;
+
+  &:hover {
+    background-color: $celeste2;
   }
-  
-  .cajacomocomprar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px 15px;
-  }
-  
-  .cajacomocomprar1, .cajacomocomprar2 {
-    border-right: 1px black solid;
-  }
-  
-  .imgcomocomprar {
-    width: 80px;
-    height: 80px;
-    justify-content: center;
-    object-fit: contain;
-  }
-  
-  .textocomocomprar {
-    padding-top: 6px;
-    font-size: 15px;
-  }
-  
-  .subhome {
-    text-align: center;
-    border-top: 15px pink solid;
-    padding-top: 5px;
-    border-bottom: 15px pink solid;
-  }
-  
-  .botonmodal {
-    background-color: #4FA8C2;
-  
-    &:hover {
-      background-color: #65c5e1;
-    }
-  }
-  
-  .estilocard {
-    border: 1px outset #65c5e1;
-    box-shadow: 1px 1px 9px;
-    margin: 10px 2px;
-  }
-  
-  .imgcard {
-    object-fit: contain;
-    height: 100%;
-  }
+}
+
+.estilocard {
+  border: 1px outset $celeste2;
+  box-shadow: 1px 1px 9px;
+  margin: 10px 2px;
+}
+
+.imgcard {
+  object-fit: contain;
+  height: 100%;
+}

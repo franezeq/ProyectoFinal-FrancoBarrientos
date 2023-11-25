@@ -1,32 +1,28 @@
 .footer {
-    border-top: 3px palevioletred dashed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: start;
-  }
-  
-  .divfooter {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    margin: 10px auto;
-    padding: 10px;
-  }
-  
-  .foottext {
-    font-size: 20px;
-    font-weight: lighter;
-    text-decoration: underline;
-    font-family: 'Roboto Slab', serif;
-    padding-top: 2px;
-    padding-left: 10px;
-  }
-  
-  .imgfooter {
-    width: 30px;
-    height: 30px;
-    padding-top: 5px;
-    object-fit: fill;
-  }
-  
+  border-top: 3px palevioletred dashed;
+  @include flex (flex, column);
+  justify-content: center;
+  align-content: start;
+}
+
+.divfooter {
+  @include flex (flex, row);
+  align-content: center;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.foottext {
+  font-size: 20px;
+  font-weight: lighter;
+  text-decoration: underline;
+  font-family: 'Roboto Slab', serif;
+  padding-top: 2px;
+  padding-left: 10px;
+}
+
+.imgfooter {
+  @include tamaño (30px, 30px);
+  padding-top: 5px;
+  object-fit: fill;
+}

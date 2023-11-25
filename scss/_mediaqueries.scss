@@ -1,256 +1,246 @@
 @media (min-width: 991px) and (max-width: 1150px) {
-    .catalogo {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .tarjetaimagen {
-      padding: 0;
-    }
-  
-    .header {
-      height: 130px;
-    }
-  
-    .pestañadesp {
-      z-index: 1100;
-      background-color: pink;
-    }
-  
-    .logo {
-      width: 10vh;
-      height: 10vh;
-      grid-column: 2;
-      padding: 0;
-      margin: 20px 0 5px 0;
-    }
-  
-    .menu {
-      margin: 2vh 1vh;
-    }
-  
-    .whatsapp {
-      width: 10vh;
-      position: fixed;
-      bottom: 5px;
-      right: 5px;
-    }
-  
-    .quienessomos {
-      margin: 0 2vh;
-    }
-  
-    .eslogan {
-      margin: 1vh;
-    }
-  
-    .descpromo {
-      font-size: 16px;
-    }
-  
-    .itemform {
-      width: 90vw;
-    }
-  
-    .tituloingresos {
-      font-size: 45px;
-    }
+  .catalogo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  @media (min-width: 768px) and (max-width: 990px) {
-    .pestañadesp {
-      z-index: 1100;
-      background-color: white;
-      position: relative;
-      top: 2px;
-    }
-  
-    .catalogo {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .tarjetaimagen {
-      padding: 0;
-    }
+
+  .tarjetaimagen {
+    padding: 0;
   }
-  
-  @media (min-width: 390px) and (max-width: 767px) {
-    .header {
-      height: 160px;
-    }
-  
-    .pestañadesp {
-      z-index: 1100;
-      background-color: white;
-      position: relative;
-      top: 5px;
-    }
-  
-    .caja {
-      display: grid;
-    }
-  
-    .item4 {
-      text-wrap: nowrap;
-    }
-  
-    .menu {
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      font-size: 20px;
-    }
-  
-    .logo {
-      width: 15vh;
-      height: 15vh;
-      justify-content: center;
-      object-fit: contain;
-      grid-row: 2;
-    }
-  
-    .catalogo {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-    }
-  
-    .tarjetaimagen {
-      padding: 0;
-    }
-  
-    .whatsapp {
-      width: 10vh;
-      position: fixed;
-      bottom: 5px;
-      right: 5px;
-    }
-  
-    .itemform {
-      width: 90vw;
-    }
-  
-    .foottext {
-      font-size: 15px;
-    }
-  
-    .tituloingresos {
-      font-size: 25px;
-    }
-  
-    .subhome {
-      font-size: 20px;
-    }
-  
-    .cajacomocomprar {
-      width: 90vh;
-      height: 150px;
-    }
-  
-    .textocomocomprar {
-      text-align: center;
-    }
+
+  .header {
+    height: 130px;
   }
-  
-  @media (max-width: 390px) {
-    .pestañadesp {
-      z-index: 1100;
-      background-color: white;
-      position: relative;
-      top: 10px;
-    }
-  
-    .caja {
-      display: grid;
-    }
-  
-    .item4 {
-      text-wrap: nowrap;
-    }
-  
-    .menu {
-      display: flex;
-      flex-direction: column;
-      align-items: start;
-      font-size: 15px;
-    }
-  
-    .logo {
-      width: 10vh;
-      height: 10vh;
-      margin-left: 5px;
-      padding: 0;
-    }
-  
-    .catalogo {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-    }
-  
-    .tarjetaimagen {
-      padding: 0;
-    }
-  
-    .whatsapp {
-      width: 5vh;
-      position: fixed;
-      bottom: 60px;
-      right: 20px;
-    }
-  
-    .itemform {
-      width: 90vw;
-    }
-  
-    .tarjetapromo {
-      margin: 20px;
-      padding: 0;
-      object-fit: contain;
-      max-width: 70vw;
-    }
-  
-    .descpromo {
-      font-size: 15px;
-    }
-  
-    .botonpromo {
-      font-size: 15px;
-      padding: 3px;
-    }
-  
-    .imgpromo {
-      margin: 0;
-      padding: 0;
-      width: 10vh;
-      height: 10vh;
-      border-right: none;
-      object-fit: contain;
-    }
-  
-    h1 {
-      font-size: 20px;
-    }
-  
-    .foottext {
-      font-size: 15px;
-    }
-  
-    .cajacomocomprar {
-      width: 90vh;
-      height: 90px;
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-  
-    .imgcomocomprar {
-      height: 50px;
-      width: 50px;
-    }
-  
-    .textocomocomprar {
-      font-size: 11px;
-      text-align: center;
-      padding: 0;
-    }
+
+  .pestañadesp {
+    z-index: 1100;
+    background-color: pink;
   }
-  
+
+  .logo {
+    @include tamaño (10vh, 10vh);
+    grid-column: 2;
+    padding: 0;
+    margin: 20px 0 5px 0;
+  }
+
+  .menu {
+    margin: 2vh 1vh;
+  }
+
+  .whatsapp {
+    width: 10vh;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+  }
+
+  .quienessomos {
+    margin: 0 2vh;
+  }
+
+  .eslogan {
+    margin: 1vh;
+  }
+
+  .descpromo {
+    font-size: 16px;
+  }
+
+  .itemform {
+    width: 90vw;
+  }
+
+  .tituloingresos {
+    font-size: 45px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .pestañadesp {
+    z-index: 1100;
+    background-color: white;
+    position: relative;
+    top: 2px;
+  }
+
+  .catalogo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tarjetaimagen {
+    padding: 0;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 767px) {
+  .header {
+    height: 160px;
+  }
+
+  .pestañadesp {
+    z-index: 1100;
+    background-color: white;
+    position: relative;
+    top: 5px;
+  }
+
+  .caja {
+    display: grid;
+  }
+
+  .item4 {
+    text-wrap: nowrap;
+  }
+
+  .menu {
+    @include flex (flex, column);
+    align-items: start;
+    font-size: 20px;
+  }
+
+  .logo {
+    @include tamaño (15vh, 15vh);
+    justify-content: center;
+    object-fit: contain;
+    grid-row: 2;
+  }
+
+  .catalogo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .tarjetaimagen {
+    padding: 0;
+  }
+
+  .whatsapp {
+    width: 10vh;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+  }
+
+  .itemform {
+    width: 90vw;
+  }
+
+  .foottext {
+    font-size: 15px;
+  }
+
+  .tituloingresos {
+    font-size: 25px;
+  }
+
+  .subhome {
+    font-size: 20px;
+  }
+
+  .cajacomocomprar {
+    @include tamaño (150px, 90vh);
+  }
+
+  .textocomocomprar {
+    text-align: center;
+  }
+}
+
+@media (max-width: 390px) {
+  .pestañadesp {
+    z-index: 1100;
+    background-color: white;
+    position: relative;
+    top: 10px;
+  }
+
+  .caja {
+    display: grid;
+  }
+
+  .item4 {
+    text-wrap: nowrap;
+  }
+
+  .menu {
+    @include flex (flex, column);
+    align-items: start;
+    font-size: 15px;
+  }
+
+  .logo {
+    @include tamaño (10vh, 10vh);
+    margin-left: 5px;
+    padding: 0;
+  }
+
+  .catalogo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .tarjetaimagen {
+    padding: 0;
+  }
+
+  .whatsapp {
+    width: 5vh;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+  }
+
+  .itemform {
+    width: 90vw;
+  }
+
+  .tarjetapromo {
+    margin: 20px;
+    padding: 0;
+    object-fit: contain;
+    max-width: 70vw;
+  }
+
+  .descpromo {
+    font-size: 15px;
+  }
+
+  .botonpromo {
+    font-size: 15px;
+    padding: 3px;
+  }
+
+  .imgpromo {
+    margin: 0;
+    padding: 0;
+    @include tamaño (10vh, 10vh);
+    border-right: none;
+    object-fit: contain;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .foottext {
+    font-size: 15px;
+  }
+
+  .cajacomocomprar {
+    @include tamaño (90px, 90vh);
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .imgcomocomprar {
+    @include tamaño (50px, 50px);
+  }
+
+  .textocomocomprar {
+    font-size: 11px;
+    text-align: center;
+    padding: 0;
+  }
+}
