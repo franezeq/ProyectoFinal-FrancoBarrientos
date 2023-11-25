@@ -11,8 +11,8 @@
   
   .eslogan {
     text-transform: uppercase;
-    font-weight: 600;
+    @include estilofuente (600, 23px);
     text-decoration: underline;
-    font-size: 23px;
+
   }
   

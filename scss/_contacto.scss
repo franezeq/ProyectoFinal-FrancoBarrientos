@@ -48,8 +48,7 @@ option {
   background-color: $celeste;
   border-radius: 10px;
   color: white;
-  font-weight: 600;
-  font-size: 20px;
+  @include estilofuente (600, 20px);
   margin-left: 10px;
   margin-right: 10px;
   padding: 5px;

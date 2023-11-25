@@ -14,15 +14,13 @@
 }
 
 .descpromo {
-    font-size: 18px;
-    font-weight: 500;
+    @include estilofuente (500, 18px);
     grid-area: descpromo;
 }
 
 .preciopromo {
     color: $celeste;
-    font-weight: 900;
-    font-size: 22px;
+    @include estilofuente (900, 22px);
     text-transform: uppercase;
     text-decoration: underline;
     grid-area: preciopromo;
@@ -31,8 +29,7 @@
 
 .botonpromo {
     text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 700;
+    @include estilofuente (700, 18px);
     background-color: $celeste;
     color: white;
     border: none;

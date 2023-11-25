@@ -4,9 +4,8 @@ body {
 }
 
 h1 {
-    font-size: 45px;
+    @include estilofuente (bold, 45px);
     text-align: center;
-    font-weight: bold;
     padding: 10px;
     text-decoration: underline;
 }

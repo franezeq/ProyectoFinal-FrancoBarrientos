@@ -15,20 +15,17 @@
 }
 
 .tarjetadescripcion {
-    font-weight: 500;
-    font-size: 18px;
+    @include estilofuente (500, 18px);
 }
 
 .tarjetaprecio {
-    font-weight: bold;
-    font-size: 26px;
+    @include estilofuente (bold, 26px);
     text-transform: uppercase;
     color: $celeste;
 }
 
 .tarjetaboton {
-    font-weight: 700;
-    font-size: 18px;
+    @include estilofuente (700, 18px);
     background-color: $celeste;
     border-radius: 15px;
     cursor: pointer;

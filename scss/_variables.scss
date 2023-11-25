@@ -16,3 +16,8 @@ $celeste2: #65c5e1;
     align-items: $alignitem;
     justify-content: $justifycontent;
 }
+
+@mixin estilofuente ($weight, $size) {
+    font-weight: $weight;
+    font-size: $size;
+}
