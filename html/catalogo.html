@@ -4,10 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meraki te ofrece un extenso catalogo para que mires desde la comodidad de tu casa">
+    <meta name="description"
+        content="Meraki te ofrece un extenso catalogo para que mires desde la comodidad de tu casa">
     <title>Catálogo | Meraki</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn-hoverme.netlify.app/hoverme/
+    1.0.4/hoverme.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -24,35 +28,36 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse pestañadesp" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ms-auto navitemlista">
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Home</a>
+                            <a class="nav-link hvr-grow" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle hvr-pop" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Productos
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="../html/catalogo.html">Catalogo</a></li>
-                                <li><a class="dropdown-item" href="../html/promociones.html">Promociones</a></li>
+                                <li><a class="dropdown-item" href="catalogo.html">Catalogo</a></li>
+                                <li><a class="dropdown-item" href="promociones.html">Promociones</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../html/quienessomos.html">¿Quienes somos?</a>
+                            <a class="nav-link hvr-pop" href="quienessomos.html">¿Quienes somos?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../html/contacto.html">Contacto</a>
+                            <a class="nav-link hvr-pop" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar en el catálogo"
                             aria-label="Search">
-                        <button class="btn botonbuscar" type="submit">Buscar</button>
+                        <button class="btn botonbuscar" id="btnbusc" type="submit">Buscar</button>
                     </form>
                 </div>
             </div>
         </nav>
+
     </header>
     <main class="maincatalogo container">
         <h1>Catálogo</h1>
@@ -166,7 +171,8 @@
                 </div>
             </div>
             <div class="card estilocard col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
-                <img src="../img/esmalteaurora.png" class="card-img-top imgcard" alt="Esmalte infantil de la princesa Aurora">
+                <img src="../img/esmalteaurora.png" class="card-img-top imgcard"
+                    alt="Esmalte infantil de la princesa Aurora">
                 <div class="card-body">
                     <h5 class="card-title">Disney</h5>
                     <p class="card-text">Esmalte infantil de la princesa aurora.</p>
@@ -238,7 +244,8 @@
                 </div>
             </div>
             <div class="card estilocard col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
-                <img src="../img/morralwilson.jpg" class="card-img-top imgcard" alt="Morral marca Wilson negro con letras rojas">
+                <img src="../img/morralwilson.jpg" class="card-img-top imgcard"
+                    alt="Morral marca Wilson negro con letras rojas">
                 <div class="card-body">
                     <h5 class="card-title">Wilson</h5>
                     <p class="card-text">Morral negro.</p>
@@ -382,7 +389,8 @@
                 </div>
             </div>
             <div class="card estilocard col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
-                <img src="../img/PerfumeAuroraCajaRombo.png" class="card-img-top imgcard" alt="Perfume infantil de la princesa Aurora en caja rombo">
+                <img src="../img/PerfumeAuroraCajaRombo.png" class="card-img-top imgcard"
+                    alt="Perfume infantil de la princesa Aurora en caja rombo">
                 <div class="card-body">
                     <h5 class="card-title">Disney</h5>
                     <p class="card-text">Perfume infantil de Aurora de 30ml.</p>
@@ -562,7 +570,8 @@
                 </div>
             </div>
             <div class="card estilocard col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
-                <img src="../img/MochilaMorralLunares.png" class="card-img-top imgcard" alt="Mochila morada con lunares blancos">
+                <img src="../img/MochilaMorralLunares.png" class="card-img-top imgcard"
+                    alt="Mochila morada con lunares blancos">
                 <div class="card-body">
                     <h5 class="card-title">Las oreiro</h5>
                     <p class="card-text">Mochila negra con lunares blancos.</p>
@@ -598,7 +607,8 @@
                 </div>
             </div>
             <div class="card estilocard col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
-                <img src="../img/LuncheraUnicornio.png" class="card-img-top imgcard" alt="Lunchera infantil de unicornios">
+                <img src="../img/LuncheraUnicornio.png" class="card-img-top imgcard"
+                    alt="Lunchera infantil de unicornios">
                 <div class="card-body">
                     <h5 class="card-title">Choose Happy</h5>
                     <p class="card-text">Lunchera infantil.</p>
@@ -670,7 +680,8 @@
                 </div>
             </div>
             <div class="card estilocard col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
-                <img src="../img/CartucheraFooty1Piso.jpg" class="card-img-top imgcard" alt="Cartuchera de un piso infantil para niñas">
+                <img src="../img/CartucheraFooty1Piso.jpg" class="card-img-top imgcard"
+                    alt="Cartuchera de un piso infantil para niñas">
                 <div class="card-body">
                     <h5 class="card-title">Footy</h5>
                     <p class="card-text">Cartuchera infantil de 1 piso.</p>
@@ -706,7 +717,8 @@
                 </div>
             </div>
             <div class="card estilocard col-xl-3 col-md-6 col-sm-12" style="width: 18rem;">
-                <img src="../img/CartucheraGamer2Cierres.png" class="card-img-top imgcard" alt="Cartuchera Gamer estilo bolsa con dos cierres">
+                <img src="../img/CartucheraGamer2Cierres.png" class="card-img-top imgcard"
+                    alt="Cartuchera Gamer estilo bolsa con dos cierres">
                 <div class="card-body">
                     <h5 class="card-title">Footy</h5>
                     <p class="card-text">Cartuchera de dos cierres.</p>
